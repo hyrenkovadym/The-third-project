@@ -1,0 +1,689 @@
+
+header
+	position: relative
+
+nav
+	height: 53px
+	width: 100%
+	background: #212121
+	position: fixed
+
+	z-index: 2
+
+	.hamburger
+		display: none
+
+.fixmenu
+	&_list
+		margin: 0
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		padding: 14px 70px
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
+		justify-content: space-between
+
+		.fixmenu_item
+			border-right: 2px dotted #000
+			padding-right: 50px
+			&:last-child
+				border-right: none
+
+			.fixmenu_link
+				font-style: normal
+				font-weight: 300
+				font-size: 15px
+				-webkit-box-align: center
+				-ms-flex-align: center
+				align-items: center
+				color: #fff
+				list-style-type: none
+				text-decoration: none
+
+.subheader
+	
+	margin-top: 53px
+	height: 87px
+	width: 100%
+	position: absolute
+	z-index: 1
+	background: rgba(0, 0, 0, 0.6)
+
+	.subheader_logo
+		display: block
+		margin-top: 19px
+
+	.subheader_official
+		margin-top: 3px
+		font-style: normal
+		font-weight: 100
+		font-size: 13px
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		color: #fff
+		opacity: 0.5
+
+	.subheader_call
+		margin-top: 24px
+		font-style: normal
+		font-weight: 300
+		font-size: 12px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: right
+		color: #fff
+
+	.subheader_phone
+		display: block
+		margin-top: 8px
+		font-style: normal
+		font-weight: 400
+		font-size: 22px
+		line-height: 12px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: right
+		text-transform: uppercase
+		text-decoration: none
+		color: #fff
+
+	.subheader_btn
+		margin-top: 22px
+		display: block
+		width: 172px
+		height: 46px
+		background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF))
+		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+		-webkit-box-shadow: none
+		box-shadow: none
+		border-radius: 4px
+		font-style: normal
+		font-weight: 400
+		font-size: 14px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
+
+.promo
+	padding: 152px 0 182px 0
+	min-height: 800px
+	background: url("../img/bg1.png") center (center / cover) no-repeat
+
+	.promo_header
+		font-style: normal
+		font-weight: 900
+		font-size: 60px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+
+	.promo_subheader
+		font-style: normal
+		font-weight: 600
+		font-size: 35px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+
+	.promo_text
+		margin-top: 27px
+		font-style: normal
+		font-weight: 300
+		font-size: 18px
+		line-height: 24px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		color: #fff
+
+	.promo_btn
+		display: block
+		margin: 0 auto
+		margin-top: 105px
+		width: 259px
+		height: 63px
+		background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF))
+		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+		-webkit-box-shadow: none
+		box-shadow: none
+		border-radius: 4px
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
+
+.main
+	padding: 71px 0 64px 0
+
+	.line
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		margin: 0 auto
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		width: 113px
+		height: 23px
+		background: #000
+		font-style: normal
+		font-weight: 400
+		font-size: 11px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+
+	.title
+		margin-top: 33px
+		font-style: normal
+		font-weight: 700
+		font-size: 38px
+		line-height: 48px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #222
+
+	&_item
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		margin-top: 35px
+
+		.main_elips
+			margin-right: 26px
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			border-radius: 100%
+			width: 116px
+			height: 116px
+			background: #1eacc7
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
+			-webkit-box-align: center
+			-ms-flex-align: center
+			align-items: center
+
+		.main_descr
+			width: 370px
+
+			.main_text
+				font-weight: 300
+				font-size: 15px
+				line-height: 21px
+				-webkit-box-align: center
+				-ms-flex-align: center
+				align-items: center
+				color: #000
+
+			.main_subtitle
+				font-weight: 400
+				font-size: 17px
+				line-height: 21px
+				-webkit-box-align: center
+				-ms-flex-align: center
+				align-items: center
+				color: #1eacc7
+
+
+.mobile
+		position: relative
+		min-height: 864px
+		padding: 48px 0 80px 0
+		background: url("../img/main_bg.png") center (center / cover) no-repeat
+
+
+
+
+
+
+		.line
+				display: -webkit-box
+				display: -ms-flexbox
+				display: flex
+				margin: 0 auto
+				-webkit-box-pack: center
+				-ms-flex-pack: center
+				justify-content: center
+				width: 113px
+				height: 23px
+				background: #000
+				font-style: normal
+				font-weight: 400
+				font-size: 11px
+				-webkit-box-align: center
+				-ms-flex-align: center
+				align-items: center
+				text-align: center
+				text-transform: uppercase
+				color: #fff
+
+		.title
+				margin-top: 33px
+				font-style: normal
+				font-weight: 700
+				font-size: 38px
+				line-height: 48px
+				-webkit-box-align: center
+				-ms-flex-align: center
+				align-items: center
+				text-align: center
+				text-transform: uppercase
+				color: #222
+
+		.subtitle
+				font-weight: 400
+				font-size: 17px
+				align-items: center
+				text-align: center
+				color: #222222
+
+.mobile
+
+		.row
+				margin-top: 30px
+
+		&_item
+				position: relative
+				width: 320px
+				height: 280px
+				margin-bottom: 19px
+				text-align: center
+				padding-top: 91px
+
+				&_1
+						background: url("../img/Rectangle 19 copy 2.png") center (center / cover) no-repeat
+				&_2
+						background: url("../img/Rectangle 19 copy 3-1.png") center (center / cover) no-repeat            
+				&_3
+						background: url("../img/Rectangle 19 copy 3-2.png") center (center / cover) no-repeat
+				&_4
+						background: url("../img/Rectangle 19 copy 3.png") center (center / cover) no-repeat
+				&_5
+						background: url("../img/Rectangle 19 copy.png") center (center / cover) no-repeat
+				&_6
+						background: url("../img/Rectangle 19.png") center (center / cover) no-repeat 
+
+		&_text
+
+				font-weight: 400
+				font-size: 24px
+				align-items: center
+				text-align: center
+				text-transform: uppercase
+				color: #FFFFFF
+
+		&_plus
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+
+				width: 29px
+				height: 29px
+				background: #000000
+				border-radius: 100%
+				left: 50%
+				transform: translateX(-50%)
+				bottom: 30px
+				cursor: pointer
+				&::before
+					content: ''
+					display: block
+					width: 14px
+					height: 1.6px
+					background-color: #1eacc7
+
+				&::after
+					content: ''
+					display: block
+					position: absolute
+					height: 14px
+					width: 2px
+					background-color: #1eacc7
+					left: 50%
+					transform: translateX(-50%)
+
+				&:hover
+					&::before , &::after
+						background-color: #ff0000
+						
+				
+.car
+		
+		position: relative
+		z-index: -2
+		min-height: 900px
+		background: url("../img/main_bg.png") center (center / cover) no-repeat
+
+		.background
+				padding: 59px 0 137px 0
+				position: absolute
+				height: 500px
+				width: 100%
+				background: #000
+				z-index: -1
+
+				.line
+						display: -webkit-box
+						display: -ms-flexbox
+						display: flex
+						margin: 0 auto
+						-webkit-box-pack: center
+						-ms-flex-pack: center
+						justify-content: center
+						width: 113px
+						height: 23px
+						background: #fff
+						font-style: normal
+						font-weight: 400
+						font-size: 11px
+						-webkit-box-align: center
+						-ms-flex-align: center
+						align-items: center
+						text-align: center
+						text-transform: uppercase
+						color: #000
+
+				.title
+						margin-top: 33px
+						font-style: normal
+						font-weight: 700
+						font-size: 38px
+						line-height: 48px
+						-webkit-box-align: center
+						-ms-flex-align: center
+						align-items: center
+						text-align: center
+						text-transform: uppercase
+						color: #fff
+
+				.subtitle
+
+						font-weight: 400
+						font-size: 17px
+						align-items: center
+						text-align: center
+						color: #fff
+
+				img
+						display: block
+						margin: 0 auto
+						margin-top: 54px
+
+				.car_text
+						display: block
+						text-align: center
+
+.require
+	padding: 68px 0 87px 0
+
+	&_block
+		margin: 33px 0
+		&_nbm
+			margin-bottom: 0px
+
+
+	&_title
+		font-weight: 400
+		font-size: 22px
+		align-items: center
+		color: #1CA8C3
+
+	&_list
+		
+		margin-top: 20px
+		list-style-type: none
+		padding-left: 50px
+		font-weight: 300
+		font-size: 17px
+		align-items: center
+		color: #222222
+		li
+			margin-bottom: 5px
+			position: relative
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left:-30px
+				top: 3px
+
+				width: 21px
+				height: 21px
+				background: url("../icons/done.png") center (center / cover) no-repeat
+
+	&_subtitle
+		font-weight: 300
+		font-size: 17px
+		align-items: center
+		color: #1CA8C3
+
+	.warning
+		.require_title
+			color: #ff0000		
+		.require_list
+			li
+				&::before
+					background: url("../icons/done_red.png") center (center / cover) no-repeat
+	.line
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		margin: 0 auto
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		width: 113px
+		height: 23px
+		background: #000000
+		font-style: normal
+		font-weight: 400
+		font-size: 11px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #ffffff
+
+	.title
+		margin-top: 33px
+		font-style: normal
+		font-weight: 700
+		font-size: 38px
+		line-height: 48px
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		color: #000000
+
+
+.world
+	position: relative
+	height: 720px
+	background: url("../img/bg2.png") center (center / cover) no-repeat
+	padding-top: 48px
+	.line
+			
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			margin: 0 auto
+			
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
+			width: 113px
+			height: 23px
+			background: #fff
+			font-style: normal
+			font-weight: 400
+			font-size: 11px
+			-webkit-box-align: center
+			-ms-flex-align: center
+			align-items: center
+			text-align: center
+			text-transform: uppercase
+			color: #000
+
+	.title
+			margin-top: 33px
+			font-style: normal
+			font-weight: 700
+			font-size: 38px
+			line-height: 48px
+			-webkit-box-align: center
+			-ms-flex-align: center
+			align-items: center
+			text-align: center
+			text-transform: uppercase
+			color: #fff
+
+	.subtitle
+
+			font-weight: 400
+			font-size: 17px
+			align-items: center
+			text-align: center
+			color: #fff
+		
+	&_link
+		font-weight: 300
+		font-size: 19px
+		display: block
+		position: absolute
+		bottom: 68px
+		left: 50%
+		transform: translateX(-50%)
+		text-decoration: none		
+		text-align: center
+		text-transform: uppercase
+		color: #1FBAD6
+
+footer 
+	padding: 0 23px 
+	min-height: 155px
+	.footer_line
+		display: block
+		margin: 0 auto
+		margin-top: 5px
+		width: 301px
+		height: 5px
+		background-color: #1eacc7
+
+	.wraper
+		display: flex
+		justify-content: space-between
+		.footer_social
+			display: flex
+			margin-top: 37px
+			justify-content: space-between
+			width: 160px
+			&_item
+				height: 35px
+				width: 35px
+				border-radius: 100%
+				background-color: #000
+				a
+					display: block
+					margin-top: 5px
+					text-align: center
+					color: #fff
+
+	.footer_links
+		margin-top: 31px
+
+		width: 400px
+		min-height: 120
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+
+		.footer_main
+			display: flex
+			justify-content: space-between
+			margin: 0 auto
+			width: 350px
+			
+			a
+				font-style: normal
+				font-weight: 300
+				font-size: 17px
+				align-items: center
+				text-transform: uppercase
+				color: #070716
+				text-decoration: none
+
+
+		.footer_sub
+			margin-top: 7px
+			display: flex
+			justify-content: space-between
+			a
+				font-style: normal
+				font-weight: 300
+				font-size: 11px
+				text-transform: uppercase
+				color: #999999
+				text-decoration: none
+
+
+		.footer_lang
+			margin-top: 7px
+			display: block
+			text-align: center
+			a
+				font-weight: 400
+				font-size: 11px
+				align-items: center
+				text-align: center
+				text-transform: uppercase
+				color: #1FBAD6
+				text-decoration: none
+
+
+	.footer_market
+		&_link
+			margin-top: 40px				
